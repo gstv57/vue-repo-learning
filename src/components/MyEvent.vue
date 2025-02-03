@@ -1,13 +1,14 @@
 <script setup>
-import { ref } from 'vue'
-let count = ref(0)
-
-const increment = () => count.value++
-const decrement = () => count.value--
+const submitHandler = (e) => {
+  e.preventDefault()
+  alert('Valid Credentials')
+}
 </script>
 
 <template>
-  <h1>Count: {{ count }}</h1>
-  <button @:click="increment">+</button>
-  <button @:click="decrement">-</button>
+  <form @:submit="submitHandler">
+    <input type="text" placeholder="Please enter your name" />
+    <input type="email" placeholder="Please enter your e-mail" />
+    <button type="submit">Submit</button>
+  </form>
 </template>
