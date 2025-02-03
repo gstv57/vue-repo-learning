@@ -1,14 +1,7 @@
 <script setup>
-const submitHandler = (e) => {
-  e.preventDefault()
-  alert('Valid Credentials')
-}
+const showMessage = (message) => alert(message)
 </script>
 
 <template>
-  <form @:submit="submitHandler">
-    <input type="text" placeholder="Please enter your name" />
-    <input type="email" placeholder="Please enter your e-mail" />
-    <button type="submit">Submit</button>
-  </form>
+  <button @click="showMessage('This is my message')">Show Message</button>
 </template>
