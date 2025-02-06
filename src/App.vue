@@ -1,7 +1,7 @@
 <script setup>
-import MyRefComponent from './components/MyRefComponent.vue'
+import ComputedProperties from './components/ComputedProperties.vue'
 </script>
 
 <template>
-  <MyRefComponent />
+  <ComputedProperties />
 </template>
