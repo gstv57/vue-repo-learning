@@ -1,12 +1,14 @@
 <script setup>
-const isTrue = false
-const isFalse = false
+import { ref } from 'vue'
+const isVisible = ref(true)
 </script>
 
 <template>
-  <div>
-    <p v-if="isTrue">This will show if isTrue is true.</p>
-    <p v-else-if="isFalse">This will show if isFalse is true</p>
-    <p v-else>Both false</p>
+  <div v-show="isVisible">
+    <p>
+      This paragraph will be shown or hidden based on the value on
+      <span style="color: blue">isVisible</span>
+    </p>
   </div>
+  <button @click="isVisible = !isVisible">Toggle</button>
 </template>
