@@ -1,13 +1,11 @@
 <script setup>
 import { computed, ref } from 'vue'
+const firstName = ref('Gustavo')
+const lastName = ref('de Moraes')
 
-const number = ref(5)
-const squaredNumber = computed(() => {
-  return number.value * number.value
-})
+const fullName = computed(() => firstName.value + ' ' + lastName.value)
 </script>
 
 <template>
-  <h1>Original Number: {{ number }}</h1>
-  <h1>Squared Number: {{ squaredNumber }}</h1>
+  <h1>Fullname : {{ fullName }}</h1>
 </template>
