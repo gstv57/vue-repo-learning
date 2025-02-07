@@ -1,8 +1,19 @@
 <script setup>
 // Basic Validation
+// const props = defineProps({
+//   fullName: String,
+//   age: Number,
+// })
+
 const props = defineProps({
-  fullName: String,
-  age: Number,
+  fullName: {
+    type: String,
+    default: 'Anonymous',
+  },
+  age: {
+    type: Number,
+    required: true,
+  },
 })
 </script>
 

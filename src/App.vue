@@ -17,5 +17,5 @@ const myFavoriteNumber = ref(7)
   <hr />
   <ChaningPropsValue :myFavoriteNumber="myFavoriteNumber" />
   <hr />
-  <PropValidation :fullName="20" :age="'Gustavo de Moraes'" />
+  <PropValidation :age="24" />
 </template>
