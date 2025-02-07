@@ -5,6 +5,7 @@
 //   age: Number,
 // })
 
+// Complex Props Validation
 const props = defineProps({
   fullName: {
     type: String,
