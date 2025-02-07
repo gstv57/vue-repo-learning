@@ -1,7 +1,7 @@
 <script setup>
-import IterationComponent from './components/IterationComponent.vue'
+import ModelBinding from './components/ModelBinding.vue'
 </script>
 
 <template>
-  <IterationComponent />
+  <ModelBinding />
 </template>
