@@ -1,7 +1,7 @@
 <script setup>
-import ModelBinding from './components/ModelBinding.vue'
+import StaticPropsComponent from './components/StaticPropsComponent.vue'
 </script>
 
 <template>
-  <ModelBinding />
+  <StaticPropsComponent name="Gustavo" />
 </template>
