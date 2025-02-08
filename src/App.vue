@@ -1,26 +1,12 @@
 <script setup>
-import SlotComponent from './components/SlotComponent.vue'
-import FallbackContent from './components/FallbackContent.vue'
-import NomedSlot from './components/NomedSlot.vue'
-import DefaultSlot from './components/DefaultSlot.vue'
+import SchoolComponent from './components/SchoolComponent.vue'
+import { provide } from 'vue'
+
+provide('studentName', 'Gustavo')
+provide('studentAge', 24)
+provide('studentLocation', ['Sorocaba', 'SP'])
 </script>
 
 <template>
-  <SlotComponent>
-    <h1>Content</h1>
-    <h2>Content</h2>
-  </SlotComponent>
-  <hr />
-  <FallbackContent> </FallbackContent>
-  <hr />
-  <NomedSlot>
-    <template v-slot:one> <h1>one</h1> </template>
-    <template v-slot:two> <h2>two</h2></template>
-  </NomedSlot>
-  <hr />
-  <DefaultSlot>
-    <template #default>
-      <h1>This is some random default component</h1>
-    </template>
-  </DefaultSlot>
+  <SchoolComponent />
 </template>
