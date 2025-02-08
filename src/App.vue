@@ -1,7 +1,11 @@
 <script setup>
-import CustomValidator from './components/CustomValidator.vue'
+import ComponentEvent from './components/ComponentEvent.vue'
+import { ref } from 'vue'
+
+let count = ref(0)
 </script>
 
 <template>
-  <CustomValidator name="Gustavo" :age="20" password="impossiblePassword" />
+  <h1>Count: {{ count }}</h1>
+  <ComponentEvent @incrementCounter="count++" />
 </template>
