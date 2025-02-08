@@ -1,11 +1,7 @@
 <script setup>
-import FromComponent from './components/FromComponent.vue'
-
-const formHandler = (username, email, password) => {
-  console.log(username, email, password)
-}
+import SlotComponent from './components/SlotComponent.vue'
 </script>
 
 <template>
-  <FromComponent @userInfo="formHandler" />
+  <SlotComponent> <h1>Content</h1> </SlotComponent>
 </template>
