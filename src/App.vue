@@ -2,6 +2,7 @@
 import SlotComponent from './components/SlotComponent.vue'
 import FallbackContent from './components/FallbackContent.vue'
 import NomedSlot from './components/NomedSlot.vue'
+import DefaultSlot from './components/DefaultSlot.vue'
 </script>
 
 <template>
@@ -17,4 +18,9 @@ import NomedSlot from './components/NomedSlot.vue'
     <template v-slot:two> <h2>two</h2></template>
   </NomedSlot>
   <hr />
+  <DefaultSlot>
+    <template #default>
+      <h1>This is some random default component</h1>
+    </template>
+  </DefaultSlot>
 </template>
