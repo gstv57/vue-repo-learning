@@ -1,6 +1,7 @@
 <script setup>
 import SlotComponent from './components/SlotComponent.vue'
 import FallbackContent from './components/FallbackContent.vue'
+import NomedSlot from './components/NomedSlot.vue'
 </script>
 
 <template>
@@ -10,4 +11,10 @@ import FallbackContent from './components/FallbackContent.vue'
   </SlotComponent>
   <hr />
   <FallbackContent> </FallbackContent>
+  <hr />
+  <NomedSlot>
+    <template v-slot:one> <h1>one</h1> </template>
+    <template v-slot:two> <h2>two</h2></template>
+  </NomedSlot>
+  <hr />
 </template>
