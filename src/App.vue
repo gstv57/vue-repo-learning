@@ -1,13 +1,7 @@
 <script setup>
-import BasicComponent from './components/BasicComponent.vue'
-import ReactiveObject from './components/ReactiveObject.vue'
-import MultipleSources from './components/MultipleSources.vue'
+import BasicRef from './components/BasicRef.vue'
 </script>
 
 <template>
-  <BasicComponent />
-  <hr />
-  <ReactiveObject />
-  <hr />
-  <MultipleSources />
+  <BasicRef />
 </template>
