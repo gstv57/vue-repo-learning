@@ -1,7 +1,7 @@
 <script setup>
-import FunctionRef from './components/FunctionRef.vue'
+import RefComponent from './components/RefComponent.vue'
 </script>
 
 <template>
-  <FunctionRef />
+  <RefComponent />
 </template>
