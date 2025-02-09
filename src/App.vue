@@ -1,7 +1,7 @@
 <script setup>
-import ToggleFriends from './components/ToggleFriends.vue'
+import CounterComponent from './components/CounterComponent.vue'
 </script>
 
 <template>
-  <ToggleFriends />
+  <CounterComponent />
 </template>
