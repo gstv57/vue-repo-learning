@@ -1,22 +1,10 @@
 <script setup>
-import { ref } from 'vue'
-import ComponentOne from './components/ComponentOne.vue'
-import ComponentThree from './components/ComponentThree.vue'
-import ComponentTwo from './components/ComponentTwo.vue'
-
-const currentTab = ref('ComponentOne')
-
-const tabs = {
-  ComponentOne,
-  ComponentTwo,
-  ComponentThree,
-}
+import GettingDataWithAxios from './components/GettingDataWithAxios.vue'
+import GettingDataWithFetch from './components/GettingDataWithFetchComponent.vue'
 </script>
 
 <template>
-  <button @click="currentTab = 'ComponentOne'">1</button>
-  <button @click="currentTab = 'ComponentTwo'">2</button>
-  <button @click="currentTab = 'ComponentThree'">3</button>
+  <GettingDataWithFetch />
   <hr />
-  <component :is="tabs[currentTab]" />
+  <GettingDataWithAxios />
 </template>

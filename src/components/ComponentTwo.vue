@@ -1,1 +1,0 @@
-<template>Component 2</template>
