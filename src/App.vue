@@ -1,12 +1,7 @@
 <script setup>
-import SchoolComponent from './components/SchoolComponent.vue'
-import { provide } from 'vue'
-
-provide('studentName', 'Gustavo')
-provide('studentAge', 24)
-provide('studentLocation', ['Sorocaba', 'SP'])
+import BasicComponent from './components/BasicComponent.vue'
 </script>
 
 <template>
-  <SchoolComponent />
+  <BasicComponent />
 </template>
